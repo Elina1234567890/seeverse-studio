@@ -36,7 +36,7 @@ document.querySelectorAll('.atlas-filters button').forEach(button => button.addE
   activeProjectFilter = button.dataset.projectFilter;
   applyProjectFilter();
 }));
-projectSearch.addEventListener('input', applyProjectFilter);
+projectSearch?.addEventListener('input', applyProjectFilter);
 
 document.querySelectorAll('.timeline-controls button').forEach(button => button.addEventListener('click', () => {
   document.querySelectorAll('.timeline-controls button').forEach(b => b.classList.remove('active'));
@@ -51,7 +51,7 @@ let scrollQueued = false;
 const updateScrollUI = () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-  railProgress.style.height = `${maxScroll > 0 ? Math.min(100, window.scrollY / maxScroll * 100) : 0}%`;
+  if (railProgress) railProgress.style.height = `${maxScroll > 0 ? Math.min(100, window.scrollY / maxScroll * 100) : 0}%`;
   const marker = window.scrollY + window.innerHeight * .42;
   let activeId = 'top';
   railLinks.forEach(link => {
@@ -162,3 +162,24 @@ document.addEventListener('click', event => {
 });
 document.querySelector('.lightbox-close')?.addEventListener('click', () => lightbox.close());
 lightbox?.addEventListener('click', event => { if (event.target === lightbox) lightbox.close(); });
+
+const teamPhotoGrid = document.querySelector('#team-photo-grid');
+if (teamPhotoGrid) {
+  fetch('assets/team-gallery.json')
+    .then(response => response.ok ? response.json() : [])
+    .then(photos => {
+      if (!Array.isArray(photos) || !photos.length) return;
+      teamPhotoGrid.replaceChildren();
+      photos.forEach(filename => {
+        if (typeof filename !== 'string' || !/\.(png|jpe?g|webp|gif)$/i.test(filename)) return;
+        const src = `assets/team-gallery/${encodeURIComponent(filename)}`;
+        const caption = filename.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ');
+        const button = document.createElement('button');
+        button.type = 'button'; button.dataset.lightbox = src; button.dataset.caption = caption;
+        const image = document.createElement('img'); image.src = src; image.alt = caption; image.loading = 'lazy';
+        const label = document.createElement('span'); label.textContent = caption;
+        button.append(image, label); teamPhotoGrid.append(button);
+      });
+    })
+    .catch(() => {});
+}
