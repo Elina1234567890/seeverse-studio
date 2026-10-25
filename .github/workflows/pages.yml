@@ -18,8 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build team photo gallery index
-        run: node scripts/build-team-gallery.mjs
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:

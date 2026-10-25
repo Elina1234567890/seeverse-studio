@@ -177,7 +177,23 @@ footer{width:min(calc(100% - 48px),1420px)!important;margin:0 auto!important}
 .jam-impact-card h3{margin:18px 0 8px;font-size:clamp(19px,2.1vw,27px);line-height:1.08}
 .jam-impact-card p{max-width:620px;margin:0 0 16px;color:#aebaca;font-size:11px;line-height:1.55}
 .jam-impact-card>b{margin-top:auto;color:#c7f36b;font-size:9px;letter-spacing:.08em}
-.team-photo-grid .gallery-loading{grid-column:1/-1;padding:24px;border:1px dashed #344256;border-radius:6px;color:#9eacbc;font-size:12px}
-.team-photo-grid button{grid-column:span 4!important;grid-row:span 2!important;min-width:0;border-radius:6px}
-.team-photo-grid button img{object-fit:cover}
-@media(max-width:760px){.jam-impact-grid{grid-template-columns:1fr}.jam-impact-card{min-height:145px}.team-photo-grid button{grid-column:span 1!important;grid-row:span 1!important}}
+.team-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;align-items:start;gap:12px}
+.team-album{min-width:0;overflow:hidden;border:1px solid #243347;border-radius:7px;background:#0d1521;scroll-margin-top:120px}
+.team-album>summary{display:grid;grid-template-columns:112px minmax(0,1fr) auto;gap:14px;align-items:center;min-height:108px;padding:10px;cursor:pointer;list-style:none}
+.team-album>summary::-webkit-details-marker{display:none}
+.team-album>summary:hover,.team-album[open]>summary{background:#121e2e}
+.team-album-cover{width:112px;height:82px;object-fit:cover;border-radius:4px;background:#05080d}
+.team-album-copy{display:grid;gap:6px;min-width:0}
+.team-album-copy strong{font-size:15px;line-height:1.2;color:#f1f5f9}
+.team-album-copy small{color:#9eacbc;font-size:11px;line-height:1.45}
+.team-album-count{padding:5px 7px;border:1px solid #344256;border-radius:4px;color:#c7d2de;font-size:10px;white-space:nowrap}
+.team-album-year{padding:0 12px 14px}
+.team-album-year h3{margin:12px 0 8px;color:#c4ef35;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.team-album-photos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.team-album-photos button{position:relative!important;grid-column:auto!important;grid-row:auto!important;min-width:0!important;height:100px;overflow:hidden;border:1px solid #243347!important;border-radius:4px;background:#05080d;cursor:zoom-in}
+.team-album-photos button img{width:100%;height:100%;object-fit:cover;transition:transform .25s}
+.team-album-photos button:hover img{transform:scale(1.04)}
+.team-album-photos button span{position:absolute;inset:auto 0 0;padding:18px 6px 5px;background:linear-gradient(transparent,rgba(5,8,13,.9));color:#fff;font-size:9px;text-align:left}
+.event-album-link{display:inline-block;margin-top:7px;color:#c4ef35!important;font-size:11px;font-weight:700;text-decoration:none}
+.event-album-link:hover{text-decoration:underline}
+@media(max-width:760px){.jam-impact-grid{grid-template-columns:1fr}.jam-impact-card{min-height:145px}.team-photo-grid{grid-template-columns:1fr!important}.team-album>summary{grid-template-columns:82px minmax(0,1fr) auto;gap:10px;min-height:88px;padding:8px}.team-album-cover{width:82px;height:66px}.team-album-copy strong{font-size:13px}.team-album-copy small{font-size:10px}.team-album-photos{grid-template-columns:repeat(3,minmax(0,1fr))}.team-album-photos button{height:90px}.team-album-count{font-size:9px;padding:4px}}

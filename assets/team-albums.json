@@ -1,0 +1,142 @@
+{
+  "albums": [
+    {
+      "id": "album-comic-con",
+      "title": { "en": "Comic Con Astana", "ru": "Comic Con Astana" },
+      "summary": { "en": "GameDev Center and indie games at Astana’s pop-culture festival.", "ru": "GameDev Center и инди-игры на фестивале поп-культуры в Астане." },
+      "cover": "assets/team/Комикон 2026.jpg",
+      "groups": [
+        { "label": "2023", "files": ["assets/team/комикон 2023.jpg", "assets/team/комикон 2023 (2).JPG"] },
+        { "label": "2024", "files": ["assets/team/комикон 2024.jpg", "assets/team/комикон 2024 (2).jpg", "assets/team/комикон 2024 (3).jpg", "assets/team/комикон 2024 (4).jpg"] },
+        { "label": "2025", "files": ["assets/team/Комикон 2025.jpg", "assets/team/комикон 2025 (2).jpg", "assets/team/Комикон 2025 (3).jpg", "assets/team/Комикон 2025 (4).jpg"] },
+        { "label": "2026", "files": ["assets/team/Комикон 2026.jpg", "assets/team/Комикон 20262.JPG", "assets/team/web-ready/ComicCon-2026-phone.jpg"] }
+      ]
+    },
+    {
+      "id": "album-digital-bridge",
+      "title": { "en": "Digital Bridge", "ru": "Digital Bridge" },
+      "summary": { "en": "Studio and GameDev Center at the regional technology forum.", "ru": "Студия и GameDev Center на региональном технологическом форуме." },
+      "cover": "assets/team/digital bridge 2025.jpg",
+      "groups": [
+        { "label": "2024", "files": ["assets/team/диджита бридж 2024.jpg"] },
+        { "label": "2025", "files": ["assets/team/Диджитал бридж 2025.jpg", "assets/team/Диджитал бридж 2025 (2).jpg", "assets/team/digital bridge 2025.jpg"] }
+      ]
+    },
+    {
+      "id": "album-digital-qazaqstan",
+      "title": { "en": "Digital Qazaqstan", "ru": "Digital Qazaqstan" },
+      "summary": { "en": "Playtests, pitches and the GameDev zone in Shymkent.", "ru": "Плейтесты, питчинг и GameDev-зона в Шымкенте." },
+      "cover": "assets/team/digital qazaqstan.jpg",
+      "groups": [{ "label": "2026", "files": ["assets/team/digital qazaqstan.jpg", "assets/team/диджитал казахстан 2026.jpg", "assets/team/диджитал казахстан 2026 (2).jpg"] }]
+    },
+    {
+      "id": "album-global-game-jam",
+      "title": { "en": "Global Game Jam · Astana", "ru": "Global Game Jam · Астана" },
+      "summary": { "en": "The Astana GameDev Center site and its jammers.", "ru": "Площадка GameDev Center в Астане и участники джема." },
+      "cover": "assets/team/Глобал геймджем.jpg",
+      "groups": [{ "label": "Global Game Jam", "files": ["assets/team/Глобал геймджем.jpg"] }]
+    },
+    {
+      "id": "album-game-jam-closing",
+      "title": { "en": "Game Jam · Closing Day", "ru": "Геймджем · закрытие" },
+      "summary": { "en": "Closing-day group photos. The filenames contain the same misspelled event label, so they’re kept together.", "ru": "Общие фото с закрытия. В названиях одна и та же опечатка, поэтому снимки собраны в один альбом." },
+      "cover": "assets/team/Бумвич геймджем закртие.jpg",
+      "groups": [{ "label": { "en": "Closing day", "ru": "Закрытие" }, "files": ["assets/team/Бумвич геймджем закртие.jpg", "assets/team/Бумвич геймджем закртие (2).jpg"] }]
+    },
+    {
+      "id": "album-trails-demo-day",
+      "title": { "en": "Trails · Demo Days", "ru": "Trails · Demo Day" },
+      "summary": { "en": "Intern teams presenting the games they built during practice.", "ru": "Команды стажировки презентуют игры, созданные во время практики." },
+      "cover": "assets/team/выпуск трейлс 2026.jpg",
+      "groups": [
+        { "label": "2024", "files": ["assets/team/демо дей 2024.jpg", "assets/team/демо дей омниум 2024.jpg"] },
+        { "label": "2026", "files": ["assets/team/выпуск трейлс 2026.jpg"] },
+        { "label": { "en": "Test cohort · year not in filename", "ru": "Тестовый поток · год не указан" }, "files": ["assets/team/выпуск тестового потока trails.jpg"] }
+      ]
+    },
+    {
+      "id": "album-game-dev-tour",
+      "title": { "en": "GameDev Tour & School Visits", "ru": "GameDev Tour и визиты в школы" },
+      "summary": { "en": "Astana Hub tours and school visits, including Quantum Tech School. Spellings of “GameDev Tour” are normalized into one collection.", "ru": "Экскурсии в Astana Hub и визиты в школы, в том числе Quantum Tech School. Варианты написания «GameDev Tour» объединены." },
+      "cover": "assets/team/Геймдев тур для частной школы Квантум.jpg",
+      "groups": [
+        { "label": "2025", "files": ["assets/team/gamedev tour.JPG"] },
+        { "label": { "en": "Quantum Tech School · year not in filename", "ru": "Quantum Tech School · год не указан" }, "files": ["assets/team/Геймдев тур для частной школы Квантум.jpg", "assets/team/геймдев-тур для частной школы квантум.jpg"] },
+        { "label": { "en": "Other tour photos · year not in filename", "ru": "Другие фото экскурсий · год не указан" }, "files": ["assets/team/геймдев-тур.jpg", "assets/team/геймедв тур .jpg", "assets/team/web-ready/GameDev-tour-phone-1.jpg", "assets/team/web-ready/GameDev-tour-phone-2.jpg"] }
+      ]
+    },
+    {
+      "id": "album-worldskills",
+      "title": { "en": "WorldSkills · Training & Awards", "ru": "WorldSkills · подготовка и награждение" },
+      "summary": { "en": "Competition, training sessions and awards. Dates absent from filenames are grouped under the matching WorldSkills year only where the surrounding event set identifies it.", "ru": "Соревнования, подготовка и награждение. Снимки без года в названии распределены по разделам WorldSkills по контексту событий." },
+      "cover": "assets/team/награждение ворлдскиллс 2026.jpg",
+      "groups": [
+        { "label": "2025", "files": ["assets/team/ворлдскиллс 2025.jpg", "assets/team/ворлдскиллс 2025 (2).jpg", "assets/team/ворлдскиллс 2025 (3).jpg"] },
+        { "label": "2026 · Competition & awards", "files": ["assets/team/ворлдскиллс 2026.jpg", "assets/team/ворлдскиллс 2026 (2).jpg", "assets/team/ворлдскиллс 2026 (3).jpg", "assets/team/награждение ворлдскиллс 2026.jpg", "assets/team/награждение ворлдскиллс 2026 (2).jpg", "assets/team/награждение ворлдскиллс 2026 (3).jpg"] },
+        { "label": "2026 · Preparation & bootcamp", "files": ["assets/team/подготовка ворлдскиллс.jpg", "assets/team/подготовка ворлдскиллс (2).jpg", "assets/team/подготовка ворлдскиллс (3).jpg", "assets/team/выпуск подготовки ворлдскиллс.jpg", "assets/team/выпуск подготовки ворлдскиллс (2).jpg", "assets/team/выпуск подготовки ворлдскиллс (3).jpg"] }
+      ]
+    },
+    {
+      "id": "album-100-ideas",
+      "title": { "en": "100 Ideas for the CIS", "ru": "100 идей для СНГ" },
+      "summary": { "en": "The team’s international competition milestone.", "ru": "Международное достижение команды." },
+      "cover": "assets/team/100 идей для снг.jpg",
+      "groups": [{ "label": "2025", "files": ["assets/team/100 идей для снг.jpg", "assets/team/100 идей для снг (2).jpg", "assets/team/100 идей для снг (3).jpg"] }]
+    },
+    {
+      "id": "album-game-dev-fest",
+      "title": { "en": "GameDev Fest", "ru": "GameDev Fest" },
+      "summary": { "en": "Studio and community at the game development festival.", "ru": "Студия и сообщество на фестивале разработки игр." },
+      "cover": "assets/team/геймдев фест.jpg",
+      "groups": [{ "label": "2026", "files": ["assets/team/геймдев фест.jpg", "assets/team/геймдев фест (2).jpg"] }]
+    },
+    {
+      "id": "album-petropavl-bootcamp",
+      "title": { "en": "Petropavl GameDev Bootcamp", "ru": "GameDev Bootcamp · Петропавловск" },
+      "summary": { "en": "Regional game development training and team sessions.", "ru": "Региональные занятия по геймдеву и командная практика." },
+      "cover": "assets/team/геймдев буткемп петропавловск.jpg",
+      "groups": [{ "label": "2026", "files": ["assets/team/геймдев буткемп петропавловск.jpg", "assets/team/геймдев буткемп петропавловск (2).jpg"] }]
+    },
+    {
+      "id": "album-unmatched",
+      "title": { "en": "GDC × NU GDC · Unmatched", "ru": "GDC × NU GDC · Unmatched" },
+      "summary": { "en": "Meetup and tabletop tournament. “Unmached” filename variants are corrected and grouped together.", "ru": "Митап и турнир по настольной игре. Варианты написания «unmached» исправлены и объединены." },
+      "cover": "assets/team/турнир unmached.jpg",
+      "groups": [{ "label": "2026", "files": ["assets/team/турник unmached.jpg", "assets/team/турнир unmached.jpg", "assets/team/турнир unmached (2).jpg"] }]
+    },
+    {
+      "id": "album-masterclasses",
+      "title": { "en": "Workshops & Masterclasses", "ru": "Мастер-классы и занятия" },
+      "summary": { "en": "Classroom moments and hands-on learning at the Center.", "ru": "Занятия и практическая работа в центре." },
+      "cover": "assets/team/МК.jpg",
+      "groups": [{ "label": { "en": "Year not in filename", "ru": "Год не указан" }, "files": ["assets/team/МК.jpg", "assets/team/МК (2).jpg", "assets/team/МК (3).jpg"] }]
+    },
+    {
+      "id": "album-go-viral",
+      "title": { "en": "Go Viral", "ru": "Go Viral" },
+      "summary": { "en": "The team’s 2023 community and creative-industry event.", "ru": "Событие команды в креативной индустрии в 2023 году." },
+      "cover": "assets/team/go viral 2023.jpg",
+      "groups": [{ "label": "2023", "files": ["assets/team/go viral 2023.jpg", "assets/team/go viral 2023 (2).jpg"] }]
+    },
+    {
+      "id": "album-community",
+      "title": { "en": "Studio & Community", "ru": "Студия и сообщество" },
+      "summary": { "en": "Meetups, studio milestones, celebrations and community initiatives.", "ru": "Митапы, важные моменты студии, праздники и инициативы сообщества." },
+      "cover": "assets/team/только приняли геймдев-центр.jpg",
+      "groups": [
+        { "label": "2023", "files": ["assets/team/митап 2023.jpg", "assets/team/приют 2023.jpg"] },
+        { "label": "2024", "files": ["assets/team/web-ready/Borsyq-birthday-2024.jpg"] },
+        { "label": "2025", "files": ["assets/team/Хэллоуин 2025.jpg"] },
+        { "label": { "en": "Year not in filename", "ru": "Год не указан" }, "files": ["assets/team/только приняли геймдев-центр.jpg", "assets/team/празднование гранта.JPG", "assets/team/празднование гранта 2.jpg", "assets/team/новый год.jpg"] }
+      ]
+    },
+    {
+      "id": "album-animo",
+      "title": { "en": "Animo Community Event", "ru": "Событие сообщества Animo" },
+      "summary": { "en": "A joint community gathering with Animo.", "ru": "Совместная встреча с сообществом Animo." },
+      "cover": "assets/team/мероприятие animo.jpg",
+      "groups": [{ "label": { "en": "Year not in filename", "ru": "Год не указан" }, "files": ["assets/team/мероприятие animo.jpg"] }]
+    }
+  ]
+}
+

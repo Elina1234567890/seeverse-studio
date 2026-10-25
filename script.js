@@ -165,21 +165,41 @@ lightbox?.addEventListener('click', event => { if (event.target === lightbox) li
 
 const teamPhotoGrid = document.querySelector('#team-photo-grid');
 if (teamPhotoGrid) {
-  fetch('assets/team-gallery.json')
-    .then(response => response.ok ? response.json() : [])
-    .then(photos => {
-      if (!Array.isArray(photos) || !photos.length) return;
+  const localized = value => typeof value === 'string' ? value : (value?.[document.documentElement.lang?.startsWith('ru') ? 'ru' : 'en'] || value?.en || '');
+  const assetUrl = path => path.split('/').map((part, index) => index ? encodeURIComponent(part) : part).join('/');
+  fetch('assets/team-albums.json')
+    .then(response => response.ok ? response.json() : Promise.reject(new Error('Gallery data unavailable')))
+    .then(({ albums = [] }) => {
+      if (!albums.length) return;
       teamPhotoGrid.replaceChildren();
-      photos.forEach(filename => {
-        if (typeof filename !== 'string' || !/\.(png|jpe?g|webp|gif)$/i.test(filename)) return;
-        const src = `assets/team-gallery/${encodeURIComponent(filename)}`;
-        const caption = filename.replace(/\.[^.]+$/, '').replace(/[_-]+/g, ' ');
-        const button = document.createElement('button');
-        button.type = 'button'; button.dataset.lightbox = src; button.dataset.caption = caption;
-        const image = document.createElement('img'); image.src = src; image.alt = caption; image.loading = 'lazy';
-        const label = document.createElement('span'); label.textContent = caption;
-        button.append(image, label); teamPhotoGrid.append(button);
+      albums.forEach(album => {
+        const details = document.createElement('details');
+        details.className = 'team-album'; details.id = album.id;
+        const summary = document.createElement('summary');
+        const cover = document.createElement('img'); cover.className = 'team-album-cover'; cover.src = assetUrl(album.cover); cover.alt = ''; cover.loading = 'lazy';
+        const copy = document.createElement('span'); copy.className = 'team-album-copy';
+        const title = document.createElement('strong'); title.textContent = localized(album.title);
+        const description = document.createElement('small'); description.textContent = localized(album.summary);
+        const count = album.groups.reduce((total, group) => total + group.files.length, 0);
+        const badge = document.createElement('span'); badge.className = 'team-album-count'; badge.textContent = `${count} ${document.documentElement.lang?.startsWith('ru') ? 'фото' : 'photos'}`;
+        copy.append(title, description); summary.append(cover, copy, badge); details.append(summary);
+        album.groups.forEach(group => {
+          const section = document.createElement('section'); section.className = 'team-album-year';
+          const heading = document.createElement('h3'); heading.textContent = localized(group.label); section.append(heading);
+          const grid = document.createElement('div'); grid.className = 'team-album-photos';
+          group.files.forEach((path, index) => {
+            const caption = `${localized(album.title)} · ${localized(group.label)} · ${index + 1}`;
+            const button = document.createElement('button'); button.type = 'button'; button.dataset.lightbox = assetUrl(path); button.dataset.caption = caption;
+            const image = document.createElement('img'); image.src = assetUrl(path); image.alt = caption; image.loading = 'lazy';
+            const label = document.createElement('span'); label.textContent = caption;
+            button.append(image, label); grid.append(button);
+          });
+          section.append(grid); details.append(section);
+        });
+        teamPhotoGrid.append(details);
       });
+      const target = document.getElementById(location.hash.slice(1));
+      if (target?.matches('.team-album')) { target.open = true; requestAnimationFrame(() => target.scrollIntoView({ block: 'start' })); }
     })
     .catch(() => {});
 }
