@@ -165,41 +165,86 @@ lightbox?.addEventListener('click', event => { if (event.target === lightbox) li
 
 const teamPhotoGrid = document.querySelector('#team-photo-grid');
 if (teamPhotoGrid) {
-  const localized = value => typeof value === 'string' ? value : (value?.[document.documentElement.lang?.startsWith('ru') ? 'ru' : 'en'] || value?.en || '');
+  const isRussian = document.documentElement.lang?.startsWith('ru');
+  const localized = value => typeof value === 'string' ? value : (value?.[isRussian ? 'ru' : 'en'] || value?.en || '');
+  const searchable = value => typeof value === 'string' ? value : Object.values(value || {}).join(' ');
+  const normalizeSearch = value => value.toLocaleLowerCase().replace(/[\s_-]+/g, '');
   const assetUrl = path => path.split('/').map((part, index) => index ? encodeURIComponent(part) : part).join('/');
-  fetch('assets/team-albums.json')
-    .then(response => response.ok ? response.json() : Promise.reject(new Error('Gallery data unavailable')))
+  const categoryNames = isRussian
+    ? { events: 'Событие', education: 'Обучение', community: 'Сообщество', achievements: 'Достижение' }
+    : { events: 'Event', education: 'Learning', community: 'Community', achievements: 'Achievement' };
+  const searchInput = document.querySelector('#team-gallery-search');
+  const filters = [...document.querySelectorAll('[data-gallery-filter]')];
+  let activeFilter = 'all';
+  let albumCards = [];
+  let emptyMessage;
+  const updateAlbums = () => {
+    const query = normalizeSearch(searchInput?.value.trim() || '');
+    let visible = 0;
+    albumCards.forEach(({ element, category, searchText }) => {
+      const show = (activeFilter === 'all' || activeFilter === category) && (!query || searchText.includes(query));
+      element.hidden = !show;
+      if (show) visible++;
+    });
+    if (emptyMessage) emptyMessage.hidden = visible > 0;
+  };
+  fetch(new URL('assets/team-albums.json?v=20261026-gallery', document.baseURI))
+    .then(response => response.ok ? response.json() : Promise.reject(new Error('Photo albums could not be loaded')))
     .then(({ albums = [] }) => {
-      if (!albums.length) return;
+      if (!Array.isArray(albums) || !albums.length) throw new Error('No photo albums found');
       teamPhotoGrid.replaceChildren();
       albums.forEach(album => {
         const details = document.createElement('details');
-        details.className = 'team-album'; details.id = album.id;
+        details.className = 'team-album'; details.id = album.id; details.dataset.category = album.category;
         const summary = document.createElement('summary');
         const cover = document.createElement('img'); cover.className = 'team-album-cover'; cover.src = assetUrl(album.cover); cover.alt = ''; cover.loading = 'lazy';
+        cover.addEventListener('error', () => { cover.hidden = true; details.classList.add('team-album-no-cover'); }, { once: true });
         const copy = document.createElement('span'); copy.className = 'team-album-copy';
+        const category = document.createElement('small'); category.className = 'team-album-category'; category.textContent = categoryNames[album.category] || (isRussian ? 'Фотоархив' : 'Photo archive');
         const title = document.createElement('strong'); title.textContent = localized(album.title);
-        const description = document.createElement('small'); description.textContent = localized(album.summary);
+        const description = document.createElement('small'); description.className = 'team-album-description'; description.textContent = localized(album.summary);
         const count = album.groups.reduce((total, group) => total + group.files.length, 0);
-        const badge = document.createElement('span'); badge.className = 'team-album-count'; badge.textContent = `${count} ${document.documentElement.lang?.startsWith('ru') ? 'фото' : 'photos'}`;
-        copy.append(title, description); summary.append(cover, copy, badge); details.append(summary);
+        const badge = document.createElement('span'); badge.className = 'team-album-count'; badge.textContent = count + ' ' + (isRussian ? 'фото' : 'photos');
+        copy.append(category, title, description); summary.append(cover, copy, badge); details.append(summary);
         album.groups.forEach(group => {
           const section = document.createElement('section'); section.className = 'team-album-year';
           const heading = document.createElement('h3'); heading.textContent = localized(group.label); section.append(heading);
           const grid = document.createElement('div'); grid.className = 'team-album-photos';
           group.files.forEach((path, index) => {
-            const caption = `${localized(album.title)} · ${localized(group.label)} · ${index + 1}`;
+            const caption = localized(album.title) + ' · ' + localized(group.label) + ' · ' + (index + 1);
             const button = document.createElement('button'); button.type = 'button'; button.dataset.lightbox = assetUrl(path); button.dataset.caption = caption;
             const image = document.createElement('img'); image.src = assetUrl(path); image.alt = caption; image.loading = 'lazy';
+            image.addEventListener('error', () => { button.classList.add('team-photo-missing'); button.disabled = true; button.removeAttribute('data-lightbox'); image.alt = isRussian ? 'Фото временно недоступно' : 'Photo temporarily unavailable'; }, { once: true });
             const label = document.createElement('span'); label.textContent = caption;
             button.append(image, label); grid.append(button);
           });
           section.append(grid); details.append(section);
         });
+        details.addEventListener('toggle', () => {
+          if (details.open) teamPhotoGrid.querySelectorAll('.team-album[open]').forEach(other => { if (other !== details) other.open = false; });
+        });
         teamPhotoGrid.append(details);
+        const searchText = normalizeSearch([searchable(album.title), searchable(album.summary), ...album.groups.map(group => searchable(group.label))].join(' '));
+        albumCards.push({ element: details, category: album.category, searchText });
       });
+      emptyMessage = document.createElement('p'); emptyMessage.className = 'gallery-empty'; emptyMessage.hidden = true;
+      emptyMessage.textContent = isRussian ? 'Альбомы не найдены. Измените фильтр или запрос.' : 'No albums found. Try another filter or search.';
+      teamPhotoGrid.append(emptyMessage);
+      filters.forEach(button => button.addEventListener('click', () => {
+        activeFilter = button.dataset.galleryFilter;
+        filters.forEach(option => { const active = option === button; option.classList.toggle('active', active); option.setAttribute('aria-pressed', String(active)); });
+        updateAlbums();
+      }));
+      filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.galleryFilter === activeFilter)));
+      searchInput?.addEventListener('input', updateAlbums);
       const target = document.getElementById(location.hash.slice(1));
       if (target?.matches('.team-album')) { target.open = true; requestAnimationFrame(() => target.scrollIntoView({ block: 'start' })); }
+      updateAlbums();
     })
-    .catch(() => {});
+    .catch(() => {
+      teamPhotoGrid.replaceChildren();
+      const message = document.createElement('p'); message.className = 'gallery-loading gallery-error';
+      message.textContent = isRussian ? 'Фотоальбомы сейчас не загрузились. Обновите страницу чуть позже.' : 'Photo albums could not be loaded. Please refresh the page in a moment.';
+      teamPhotoGrid.append(message);
+    });
 }
