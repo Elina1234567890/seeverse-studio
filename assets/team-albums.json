@@ -103,6 +103,41 @@
           "embedUrl": "https://www.instagram.com/reel/DbsuPXxsJs1/embed/",
           "url": "https://www.instagram.com/gca.communities/reel/DbsuPXxsJs1/"
         }
+      ],
+      "media": [
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "12.07.2025",
+          "title": {
+            "en": "Comic Con Astana 2025 · Instagram Reel",
+            "ru": "Comic Con Astana 2025 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DMBPPvviwPi/embed/",
+          "url": "https://www.instagram.com/reel/DMBPPvviwPi/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "06.07.2024",
+          "title": {
+            "en": "Comic Con Astana 2024 · Instagram post",
+            "ru": "Comic Con Astana 2024 · Instagram post"
+          },
+          "embedUrl": "https://www.instagram.com/p/C9Fz01ztBGD/embed/",
+          "url": "https://www.instagram.com/p/C9Fz01ztBGD/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "06.07.2024",
+          "title": {
+            "en": "Comic Con Astana 2024 · Instagram post",
+            "ru": "Comic Con Astana 2024 · Instagram post"
+          },
+          "embedUrl": "https://www.instagram.com/p/C9FsbJEtIoV/embed/",
+          "url": "https://www.instagram.com/p/C9FsbJEtIoV/"
+        }
       ]
     },
     {
@@ -132,7 +167,64 @@
           ]
         }
       ],
-      "category": "events"
+      "category": "events",
+      "media": [
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "30.10.2023",
+          "title": {
+            "en": "Digital Bridge 2023 · Instagram post",
+            "ru": "Digital Bridge 2023 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/CzAfyE0CuL1/embed/",
+          "url": "https://www.instagram.com/p/CzAfyE0CuL1/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "15.10.2025",
+          "title": {
+            "en": "Digital Bridge 2025 · Instagram Reel",
+            "ru": "Digital Bridge 2025 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DP0gn44At-t/embed/",
+          "url": "https://www.instagram.com/reel/DP0gn44At-t/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "16.10.2025",
+          "title": {
+            "en": "Digital Bridge 2025 · Instagram Reel",
+            "ru": "Digital Bridge 2025 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DP3F49TAvSB/embed/",
+          "url": "https://www.instagram.com/reel/DP3F49TAvSB/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "25.09.2023",
+          "title": {
+            "en": "Digital Bridge 2023 · Instagram Reel",
+            "ru": "Digital Bridge 2023 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/CxnfXxOt5sb/embed/",
+          "url": "https://www.instagram.com/reel/CxnfXxOt5sb/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "20.10.2023",
+          "title": {
+            "en": "Digital Bridge 2023 · Instagram Reel",
+            "ru": "Digital Bridge 2023 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/CyoHOqZsG65/embed/",
+          "url": "https://www.instagram.com/reel/CyoHOqZsG65/"
+        }
+      ]
     },
     {
       "id": "album-digital-qazaqstan",
@@ -156,7 +248,53 @@
         }
       ],
       "category": "events",
-      "videos": []
+      "videos": [],
+      "media": [
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "22.03.2026",
+          "title": {
+            "en": "Digital Qazaqstan 2026 · Instagram Reel",
+            "ru": "Digital Qazaqstan 2026 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DWMhFtODOEc/embed/",
+          "url": "https://www.instagram.com/reel/DWMhFtODOEc/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "12.03.2026",
+          "title": {
+            "en": "Digital Qazaqstan 2026 · Instagram Reel",
+            "ru": "Digital Qazaqstan 2026 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DVxvCAKDMcX/embed/",
+          "url": "https://www.instagram.com/reel/DVxvCAKDMcX/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "29.03.2026",
+          "title": {
+            "en": "Digital Qazaqstan 2026 · Instagram post",
+            "ru": "Digital Qazaqstan 2026 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/DWdXPk4DMxd/embed/",
+          "url": "https://www.instagram.com/p/DWdXPk4DMxd/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "03.04.2026",
+          "title": {
+            "en": "Digital Qazaqstan 2026 · Instagram post",
+            "ru": "Digital Qazaqstan 2026 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/DWqxevpDQn5/embed/",
+          "url": "https://www.instagram.com/p/DWqxevpDQn5/"
+        }
+      ]
     },
     {
       "id": "album-global-game-jam",
@@ -177,7 +315,119 @@
           ]
         }
       ],
-      "category": "events"
+      "category": "events",
+      "media": [
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "24.01.2026",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram post",
+            "ru": "Global Game Jam Kazakhstan 2026 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/DT4sUFtDav3/embed/",
+          "url": "https://www.instagram.com/p/DT4sUFtDav3/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "27.01.2026",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram post",
+            "ru": "Global Game Jam Kazakhstan 2026 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/DUBZh5VDBJp/embed/",
+          "url": "https://www.instagram.com/p/DUBZh5VDBJp/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "31.01.2026",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram Reel",
+            "ru": "Global Game Jam Kazakhstan 2026 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DUKzXQxDF7a/embed/",
+          "url": "https://www.instagram.com/reel/DUKzXQxDF7a/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "16.02.2026",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram Reel",
+            "ru": "Global Game Jam Kazakhstan 2026 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DU07q4ZjCZ5/embed/",
+          "url": "https://www.instagram.com/reel/DU07q4ZjCZ5/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "10.12.2025",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram post",
+            "ru": "Global Game Jam Kazakhstan 2026 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/DSFLYRMCEcG/embed/",
+          "url": "https://www.instagram.com/p/DSFLYRMCEcG/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "19.12.2025",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram Reel",
+            "ru": "Global Game Jam Kazakhstan 2026 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DSbv2HADGMf/embed/",
+          "url": "https://www.instagram.com/reel/DSbv2HADGMf/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "19.12.2025",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram post",
+            "ru": "Global Game Jam Kazakhstan 2026 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/DScf5_-CPSy/embed/",
+          "url": "https://www.instagram.com/p/DScf5_-CPSy/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "29.12.2025",
+          "title": {
+            "en": "Global Game Jam Kazakhstan 2026 · Instagram Reel",
+            "ru": "Global Game Jam Kazakhstan 2026 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DS2EGutiBdk/embed/",
+          "url": "https://www.instagram.com/reel/DS2EGutiBdk/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "22.01.2024",
+          "title": {
+            "en": "Global Game Jam Astana 2024 · Instagram post",
+            "ru": "Global Game Jam Astana 2024 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/C2atasyNWqP/embed/",
+          "url": "https://www.instagram.com/p/C2atasyNWqP/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "30.01.2024",
+          "title": {
+            "en": "Global Game Jam Astana 2024 · Instagram Reel",
+            "ru": "Global Game Jam Astana 2024 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/C2uSmfxtVW5/embed/",
+          "url": "https://www.instagram.com/reel/C2uSmfxtVW5/"
+        }
+      ]
     },
     {
       "id": "album-game-jam-closing",
@@ -246,6 +496,55 @@
         }
       ],
       "category": "education"
+    },
+    {
+      "id": "album-gamedev-demo-day-2023",
+      "title": {
+        "en": "GameDev Center Demo Day · 2023",
+        "ru": "GameDev Center Demo Day · 2023"
+      },
+      "summary": {
+        "en": "Teams from the GameDev Center incubation programme present their games and results.",
+        "ru": "Команды инкубационной программы GameDev Center представляют игры и результаты работы."
+      },
+      "cover": "assets/team/митап 2023.jpg",
+      "groups": [],
+      "category": "events",
+      "media": [
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "21.08.2023",
+          "title": {
+            "en": "GameDev Center Demo Day 2023 · Instagram post",
+            "ru": "GameDev Center Demo Day 2023 · Instagram post"
+          },
+          "embedUrl": "https://www.instagram.com/p/CwNNC2zMQao/embed/",
+          "url": "https://www.instagram.com/p/CwNNC2zMQao/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "22.08.2023",
+          "title": {
+            "en": "GameDev Center Demo Day 2023 · Instagram Reel",
+            "ru": "GameDev Center Demo Day 2023 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/CwO2T-bIOqJ/embed/",
+          "url": "https://www.instagram.com/reel/CwO2T-bIOqJ/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "23.08.2023",
+          "title": {
+            "en": "GameDev Center Demo Day 2023 · Instagram Reel",
+            "ru": "GameDev Center Demo Day 2023 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/CwRdPVNIvE3/embed/",
+          "url": "https://www.instagram.com/reel/CwRdPVNIvE3/"
+        }
+      ]
     },
     {
       "id": "album-omnium-demo-day",
@@ -368,7 +667,31 @@
           ]
         }
       ],
-      "category": "achievements"
+      "category": "achievements",
+      "media": [
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "26.05.2025",
+          "title": {
+            "en": "WorldSkills Astana 2025 · Instagram post",
+            "ru": "WorldSkills Astana 2025 · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/DKHcV68oRlT/embed/",
+          "url": "https://www.instagram.com/p/DKHcV68oRlT/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "16.05.2025",
+          "title": {
+            "en": "WorldSkills Astana 2025 · Instagram Reel",
+            "ru": "WorldSkills Astana 2025 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DJuNoessU_U/embed/",
+          "url": "https://www.instagram.com/reel/DJuNoessU_U/"
+        }
+      ]
     },
     {
       "id": "album-100-ideas",
@@ -563,7 +886,20 @@
           ]
         }
       ],
-      "category": "education"
+      "category": "education",
+      "media": [
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "12.04.2024",
+          "title": {
+            "en": "GameDev Center × Borsyq Games workshop · Instagram post",
+            "ru": "Мастер-класс GameDev Center × Borsyq Games · публикация Instagram"
+          },
+          "embedUrl": "https://www.instagram.com/p/C5qSAtMtDIj/embed/",
+          "url": "https://www.instagram.com/p/C5qSAtMtDIj/"
+        }
+      ]
     },
     {
       "id": "album-go-viral",
@@ -585,7 +921,42 @@
           ]
         }
       ],
-      "category": "community"
+      "category": "community",
+      "media": [
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "21.06.2023",
+          "title": {
+            "en": "Go Viral Festival Astana 2023 · Instagram Reel",
+            "ru": "Фестиваль Go Viral в Астане, 2023 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/CtxCOhwoW3n/embed/",
+          "url": "https://www.instagram.com/reel/CtxCOhwoW3n/"
+        },
+        {
+          "type": "instagram-post",
+          "provider": "GAMEDEV CENTER",
+          "date": "23.06.2023",
+          "title": {
+            "en": "Go Viral Festival Astana 2023 · Instagram post",
+            "ru": "Фестиваль Go Viral в Астане, 2023 · Instagram post"
+          },
+          "embedUrl": "https://www.instagram.com/p/Ct142QlI7rt/embed/",
+          "url": "https://www.instagram.com/p/Ct142QlI7rt/"
+        },
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "23.06.2023",
+          "title": {
+            "en": "Go Viral Festival Astana 2023 · Instagram Reel",
+            "ru": "Фестиваль Go Viral в Астане, 2023 · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/Ct1RyjQolRc/embed/",
+          "url": "https://www.instagram.com/reel/Ct1RyjQolRc/"
+        }
+      ]
     },
     {
       "id": "album-community",
@@ -631,7 +1002,20 @@
           ]
         }
       ],
-      "category": "community"
+      "category": "community",
+      "media": [
+        {
+          "type": "instagram-reel",
+          "provider": "GAMEDEV CENTER",
+          "date": "05.10.2024",
+          "title": {
+            "en": "GameDev Center community · Instagram Reel",
+            "ru": "Сообщество GameDev Center · Instagram Reel"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DAvNsjluDGM/embed/",
+          "url": "https://www.instagram.com/reel/DAvNsjluDGM/"
+        }
+      ]
     },
     {
       "id": "album-animo",
