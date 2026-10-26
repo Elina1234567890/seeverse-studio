@@ -188,7 +188,7 @@ if (teamPhotoGrid) {
     });
     if (emptyMessage) emptyMessage.hidden = visible > 0;
   };
-  fetch(new URL('assets/team-albums.json?v=20261026-gallery-videos', document.baseURI))
+  fetch(new URL('assets/team-albums.json?v=20261026-gallery-omnium', document.baseURI))
     .then(response => response.ok ? response.json() : Promise.reject(new Error('Photo albums could not be loaded')))
     .then(({ albums = [] }) => {
       if (!Array.isArray(albums) || !albums.length) throw new Error('No photo albums found');

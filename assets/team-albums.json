@@ -91,6 +91,17 @@
           },
           "embedUrl": "https://www.instagram.com/reel/DbyI39qMCUQ/embed/",
           "url": "https://www.instagram.com/gca.communities/reel/DbyI39qMCUQ/"
+        },
+        {
+          "type": "instagram",
+          "provider": "GCA × SEEVERSE",
+          "date": "06.08.2026",
+          "title": {
+            "en": "Local game creators meet Comic Con visitors",
+            "ru": "Авторы локальных игр встречаются с посетителями Comic Con"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DbsuPXxsJs1/embed/",
+          "url": "https://www.instagram.com/gca.communities/reel/DbsuPXxsJs1/"
         }
       ]
     },
@@ -145,19 +156,7 @@
         }
       ],
       "category": "events",
-      "videos": [
-        {
-          "type": "instagram",
-          "provider": "GCA × GAMEDEV CENTER",
-          "date": "06.08.2026",
-          "title": {
-            "en": "Creators meet players",
-            "ru": "Авторы встречаются с игроками"
-          },
-          "embedUrl": "https://www.instagram.com/reel/DbsuPXxsJs1/embed/",
-          "url": "https://www.instagram.com/gca.communities/reel/DbsuPXxsJs1/"
-        }
-      ]
+      "videos": []
     },
     {
       "id": "album-global-game-jam",
@@ -219,24 +218,17 @@
       ]
     },
     {
-      "id": "album-trails-demo-day",
+      "id": "album-trails-graduation",
       "title": {
-        "en": "Trails · Demo Days",
-        "ru": "Trails · Demo Day"
+        "en": "Trails · Cohort Graduation",
+        "ru": "Trails · Выпуск потока"
       },
       "summary": {
-        "en": "Intern teams presenting the games they built during practice.",
-        "ru": "Команды стажировки презентуют игры, созданные во время практики."
+        "en": "Graduating Trails teams share the games they built during production practice.",
+        "ru": "Выпускники Trails показывают игры, созданные во время производственной практики."
       },
       "cover": "assets/team/выпуск трейлс 2026.jpg",
       "groups": [
-        {
-          "label": "2024",
-          "files": [
-            "assets/team/демо дей 2024.jpg",
-            "assets/team/демо дей омниум 2024.jpg"
-          ]
-        },
         {
           "label": "2026",
           "files": [
@@ -250,6 +242,28 @@
           },
           "files": [
             "assets/team/выпуск тестового потока trails.jpg"
+          ]
+        }
+      ],
+      "category": "education"
+    },
+    {
+      "id": "album-omnium-demo-day",
+      "title": {
+        "en": "Omnium · Training Demo Day",
+        "ru": "Omnium · учебный Demo Day"
+      },
+      "summary": {
+        "en": "Omnium learners present the projects they developed during the program.",
+        "ru": "Участники Omnium представляют проекты, созданные во время обучения."
+      },
+      "cover": "assets/team/демо дей омниум 2024.jpg",
+      "groups": [
+        {
+          "label": "2024",
+          "files": [
+            "assets/team/демо дей 2024.jpg",
+            "assets/team/демо дей омниум 2024.jpg"
           ]
         }
       ],
