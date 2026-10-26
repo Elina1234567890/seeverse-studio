@@ -188,7 +188,7 @@ if (teamPhotoGrid) {
     });
     if (emptyMessage) emptyMessage.hidden = visible > 0;
   };
-  fetch(new URL('assets/team-albums.json?v=20261026-gallery', document.baseURI))
+  fetch(new URL('assets/team-albums.json?v=20261026-gallery-videos', document.baseURI))
     .then(response => response.ok ? response.json() : Promise.reject(new Error('Photo albums could not be loaded')))
     .then(({ albums = [] }) => {
       if (!Array.isArray(albums) || !albums.length) throw new Error('No photo albums found');
@@ -204,7 +204,8 @@ if (teamPhotoGrid) {
         const title = document.createElement('strong'); title.textContent = localized(album.title);
         const description = document.createElement('small'); description.className = 'team-album-description'; description.textContent = localized(album.summary);
         const count = album.groups.reduce((total, group) => total + group.files.length, 0);
-        const badge = document.createElement('span'); badge.className = 'team-album-count'; badge.textContent = count + ' ' + (isRussian ? 'фото' : 'photos');
+        const videoCount = album.videos?.length || 0;
+        const badge = document.createElement('span'); badge.className = 'team-album-count'; badge.textContent = count + ' ' + (isRussian ? 'фото' : 'photos') + (videoCount ? ' · ' + videoCount + ' ' + (isRussian ? 'видео' : 'videos') : '');
         copy.append(category, title, description); summary.append(cover, copy, badge); details.append(summary);
         album.groups.forEach(group => {
           const section = document.createElement('section'); section.className = 'team-album-year';
@@ -220,11 +221,37 @@ if (teamPhotoGrid) {
           });
           section.append(grid); details.append(section);
         });
+        if (album.videos?.length) {
+          const mediaSection = document.createElement('section'); mediaSection.className = 'team-album-videos';
+          const heading = document.createElement('div'); heading.className = 'team-album-media-heading';
+          const mediaTitle = document.createElement('h3'); mediaTitle.textContent = isRussian ? 'Видео с события' : 'Event videos';
+          const mediaNote = document.createElement('p'); mediaNote.textContent = isRussian ? 'Ролики и репортажи, связанные с этим альбомом.' : 'Clips and coverage connected to this album.';
+          heading.append(mediaTitle, mediaNote); mediaSection.append(heading);
+          const videoGrid = document.createElement('div'); videoGrid.className = 'team-video-grid';
+          album.videos.forEach(video => {
+            const card = document.createElement('article'); card.className = 'team-video-card team-video-' + video.type;
+            const frame = document.createElement('div'); frame.className = 'team-video-frame';
+            const iframe = document.createElement('iframe'); iframe.dataset.src = video.embedUrl; iframe.loading = 'lazy'; iframe.title = localized(video.title); iframe.allow = 'autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'; iframe.allowFullscreen = true;
+            if (video.type === 'instagram') iframe.scrolling = 'no';
+            frame.append(iframe);
+            const copy = document.createElement('div'); copy.className = 'team-video-copy';
+            const source = document.createElement('span'); source.textContent = video.provider + (video.date ? ' · ' + video.date : '');
+            const title = document.createElement('h4'); title.textContent = localized(video.title);
+            const link = document.createElement('a'); link.href = video.url; link.target = '_blank'; link.rel = 'noreferrer'; link.textContent = isRussian ? 'Открыть источник ↗' : 'Open original ↗';
+            copy.append(source, title, link); card.append(frame, copy); videoGrid.append(card);
+          });
+          mediaSection.append(videoGrid); details.append(mediaSection);
+        }
         details.addEventListener('toggle', () => {
-          if (details.open) teamPhotoGrid.querySelectorAll('.team-album[open]').forEach(other => { if (other !== details) other.open = false; });
+          if (details.open) {
+            teamPhotoGrid.querySelectorAll('.team-album[open]').forEach(other => { if (other !== details) other.open = false; });
+            details.querySelectorAll('iframe[data-src]').forEach(frame => { if (!frame.hasAttribute('src')) frame.src = frame.dataset.src; });
+          } else {
+            details.querySelectorAll('iframe[src]').forEach(frame => frame.removeAttribute('src'));
+          }
         });
         teamPhotoGrid.append(details);
-        const searchText = normalizeSearch([searchable(album.title), searchable(album.summary), ...album.groups.map(group => searchable(group.label))].join(' '));
+        const searchText = normalizeSearch([searchable(album.title), searchable(album.summary), ...album.groups.map(group => searchable(group.label)), ...(album.videos || []).flatMap(video => [searchable(video.title), video.provider, video.date, ...(video.keywords || [])])].join(' '));
         albumCards.push({ element: details, category: album.category, searchText });
       });
       emptyMessage = document.createElement('p'); emptyMessage.className = 'gallery-empty'; emptyMessage.hidden = true;

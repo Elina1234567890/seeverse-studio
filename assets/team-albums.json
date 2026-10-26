@@ -46,7 +46,53 @@
           ]
         }
       ],
-      "category": "events"
+      "category": "events",
+      "videos": [
+        {
+          "type": "instagram",
+          "provider": "GCA × SEEVERSE",
+          "date": "27.08.2026",
+          "title": {
+            "en": "Do you know Kazakhstan’s game scene?",
+            "ru": "Знаете ли вы казахстанский геймдев?"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DcjXzyxsYLx/embed/",
+          "url": "https://www.instagram.com/gca.communities/reel/DcjXzyxsYLx/"
+        },
+        {
+          "type": "instagram",
+          "provider": "PARTNER VIEW",
+          "date": "08.08.2026",
+          "title": {
+            "en": "Malika Igibayeva on games and art",
+            "ru": "Малика Игибаева о геймдеве и искусстве"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DbysNUSIC4z/embed/",
+          "url": "https://www.instagram.com/malikatakira/reel/DbysNUSIC4z/"
+        },
+        {
+          "type": "instagram",
+          "provider": "GCA × SEEVERSE",
+          "date": "07.09.2026",
+          "title": {
+            "en": "The people behind the Comic Con GameDev zone",
+            "ru": "Кто стоит за GameDev-зоной Comic Con"
+          },
+          "embedUrl": "https://www.instagram.com/reel/Dc_jP7Ns1uy/embed/",
+          "url": "https://www.instagram.com/gca.communities/reel/Dc_jP7Ns1uy/"
+        },
+        {
+          "type": "instagram",
+          "provider": "GCA × SEEVERSE",
+          "date": "08.08.2026",
+          "title": {
+            "en": "Play, test and meet the creators",
+            "ru": "Играть, тестировать, говорить с авторами"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DbyI39qMCUQ/embed/",
+          "url": "https://www.instagram.com/gca.communities/reel/DbyI39qMCUQ/"
+        }
+      ]
     },
     {
       "id": "album-digital-bridge",
@@ -98,7 +144,20 @@
           ]
         }
       ],
-      "category": "events"
+      "category": "events",
+      "videos": [
+        {
+          "type": "instagram",
+          "provider": "GCA × GAMEDEV CENTER",
+          "date": "06.08.2026",
+          "title": {
+            "en": "Creators meet players",
+            "ru": "Авторы встречаются с игроками"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DbsuPXxsJs1/embed/",
+          "url": "https://www.instagram.com/gca.communities/reel/DbsuPXxsJs1/"
+        }
+      ]
     },
     {
       "id": "album-global-game-jam",
@@ -144,7 +203,20 @@
           ]
         }
       ],
-      "category": "events"
+      "category": "events",
+      "videos": [
+        {
+          "type": "instagram",
+          "provider": "GAMEDEV CENTER",
+          "date": "20.07.2026",
+          "title": {
+            "en": "After the jam: people, connections and shared memories",
+            "ru": "После джема: люди, знакомства и общие воспоминания"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DbAlCnIinDv/embed/",
+          "url": "https://www.instagram.com/gamedevcenter/reel/DbAlCnIinDv/"
+        }
+      ]
     },
     {
       "id": "album-trails-demo-day",
@@ -314,7 +386,31 @@
           ]
         }
       ],
-      "category": "events"
+      "category": "events",
+      "videos": [
+        {
+          "type": "instagram",
+          "provider": "GAMEDEV CENTER × GCA",
+          "date": "17.07.2026",
+          "title": {
+            "en": "Faces of GameDev Fest",
+            "ru": "Лица GameDev Fest"
+          },
+          "embedUrl": "https://www.instagram.com/reel/Da5z7aHCKV8/embed/",
+          "url": "https://www.instagram.com/gamedevcenter/reel/Da5z7aHCKV8/"
+        },
+        {
+          "type": "instagram",
+          "provider": "CIAQ",
+          "date": "21.07.2026",
+          "title": {
+            "en": "A GameDev Fest tour with Malika Igibayeva",
+            "ru": "Экскурсия по GameDev Fest с Маликой Игибаевой"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DbECOGUpVJw/embed/",
+          "url": "https://www.instagram.com/ciaq.kz/reel/DbECOGUpVJw/"
+        }
+      ]
     },
     {
       "id": "album-petropavl-bootcamp",
@@ -336,7 +432,29 @@
           ]
         }
       ],
-      "category": "education"
+      "category": "education",
+      "videos": [
+        {
+          "type": "youtube",
+          "provider": "MTRK · Petropavl",
+          "date": "25.06.2026",
+          "title": {
+            "en": "Elina Kim and a participant on the GameDev Bootcamp",
+            "ru": "Элина Ким и участник о GameDev Bootcamp"
+          },
+          "embedUrl": "https://www.youtube.com/embed/13fgqvSCldk",
+          "url": "https://mtrk.kz/ru/2026/06/25/poprobuy-sozdat-svoyu-igru/",
+          "keywords": [
+            "interview",
+            "report",
+            "bootcamp",
+            "Petropavl",
+            "интервью",
+            "репортаж",
+            "Петропавловск"
+          ]
+        }
+      ]
     },
     {
       "id": "album-unmatched",
