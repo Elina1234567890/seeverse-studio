@@ -310,7 +310,20 @@
           ]
         }
       ],
-      "category": "education"
+      "category": "education",
+      "videos": [
+        {
+          "type": "instagram",
+          "provider": "GAMEDEV CENTER",
+          "date": "10.06.2026",
+          "title": {
+            "en": "GameDev Tour at Astana Hub",
+            "ru": "GameDev Tour в Astana Hub"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DZajsQyi-UZ/embed/",
+          "url": "https://www.instagram.com/reel/DZajsQyi-UZ/"
+        }
+      ]
     },
     {
       "id": "album-worldskills",
@@ -423,6 +436,28 @@
           },
           "embedUrl": "https://www.instagram.com/reel/DbECOGUpVJw/embed/",
           "url": "https://www.instagram.com/ciaq.kz/reel/DbECOGUpVJw/"
+        },
+        {
+          "type": "instagram",
+          "provider": "GAMEDEV CENTER",
+          "date": "15.07.2026",
+          "title": {
+            "en": "GameDev Fest · event video",
+            "ru": "GameDev Fest · видео о событии"
+          },
+          "embedUrl": "https://www.instagram.com/reel/Daz2g8SCC09/embed/",
+          "url": "https://www.instagram.com/reel/Daz2g8SCC09/"
+        },
+        {
+          "type": "instagram",
+          "provider": "GAMEDEV CENTER",
+          "date": "17.07.2026",
+          "title": {
+            "en": "GameDev Fest · event-day video",
+            "ru": "GameDev Fest · видео в день события"
+          },
+          "embedUrl": "https://www.instagram.com/reel/Da5RBFwsFRV/embed/",
+          "url": "https://www.instagram.com/reel/Da5RBFwsFRV/"
         }
       ]
     },
@@ -467,6 +502,17 @@
             "репортаж",
             "Петропавловск"
           ]
+        },
+        {
+          "type": "instagram",
+          "provider": "GAMEDEV CENTER",
+          "date": "29.06.2026",
+          "title": {
+            "en": "Petropavl GameDev Bootcamp · event video",
+            "ru": "GameDev Bootcamp в Петропавловске · видео о событии"
+          },
+          "embedUrl": "https://www.instagram.com/reel/DaKjT8nB35g/embed/",
+          "url": "https://www.instagram.com/reel/DaKjT8nB35g/"
         }
       ]
     },
