@@ -233,8 +233,8 @@
         "ru": "Digital Qazaqstan"
       },
       "summary": {
-        "en": "Playtests, pitches and the GameDev zone in Shymkent.",
-        "ru": "Плейтесты, питчинг и GameDev-зона в Шымкенте."
+        "en": "Game playtests and presentations at Digital Qazaqstan in Shymkent.",
+        "ru": "Тестирование и презентации игр на Digital Qazaqstan в Шымкенте."
       },
       "cover": "assets/team/digital qazaqstan.jpg",
       "groups": [
@@ -303,8 +303,8 @@
         "ru": "Global Game Jam · Астана"
       },
       "summary": {
-        "en": "The Astana GameDev Center site and its jammers.",
-        "ru": "Площадка GameDev Center в Астане и участники джема."
+        "en": "Global Game Jam participants at the Astana venue.",
+        "ru": "Участники Global Game Jam на площадке в Астане."
       },
       "cover": "assets/team/Глобал геймджем.jpg",
       "groups": [
@@ -436,8 +436,8 @@
         "ru": "Геймджем · закрытие"
       },
       "summary": {
-        "en": "Closing-day group photos. The filenames contain the same misspelled event label, so they’re kept together.",
-        "ru": "Общие фото с закрытия. В названиях одна и та же опечатка, поэтому снимки собраны в один альбом."
+        "en": "Group photos from the closing day of the game jam.",
+        "ru": "Групповые фотографии с закрытия геймджема."
       },
       "cover": "assets/team/Бумвич геймджем закртие.jpg",
       "groups": [
@@ -575,8 +575,8 @@
         "ru": "GameDev Tour и визиты в школы"
       },
       "summary": {
-        "en": "Astana Hub tours and school visits, including Quantum Tech School. Spellings of “GameDev Tour” are normalized into one collection.",
-        "ru": "Экскурсии в Astana Hub и визиты в школы, в том числе Quantum Tech School. Варианты написания «GameDev Tour» объединены."
+        "en": "Astana Hub tours and school visits, including Quantum Tech School.",
+        "ru": "Экскурсии в Astana Hub и визиты в школы, в том числе Quantum Tech School."
       },
       "cover": "assets/team/Геймдев тур для частной школы Квантум.jpg",
       "groups": [
@@ -631,8 +631,8 @@
         "ru": "WorldSkills · подготовка и награждение"
       },
       "summary": {
-        "en": "Competition, training sessions and awards. Dates absent from filenames are grouped under the matching WorldSkills year only where the surrounding event set identifies it.",
-        "ru": "Соревнования, подготовка и награждение. Снимки без года в названии распределены по разделам WorldSkills по контексту событий."
+        "en": "Training, competition and awards at WorldSkills.",
+        "ru": "Подготовка, соревнования и награждение участников WorldSkills."
       },
       "cover": "assets/team/награждение ворлдскиллс 2026.jpg",
       "groups": [
@@ -700,8 +700,8 @@
         "ru": "100 идей для СНГ"
       },
       "summary": {
-        "en": "The team’s international competition milestone.",
-        "ru": "Международное достижение команды."
+        "en": "The team at the international round of “100 Ideas for the CIS.”",
+        "ru": "Участие в международном этапе конкурса «100 идей для СНГ»."
       },
       "cover": "assets/team/100 идей для снг.jpg",
       "groups": [
@@ -791,8 +791,8 @@
         "ru": "GameDev Bootcamp · Петропавловск"
       },
       "summary": {
-        "en": "Regional game development training and team sessions.",
-        "ru": "Региональные занятия по геймдеву и командная практика."
+        "en": "Game development classes in Petropavl.",
+        "ru": "Занятия по разработке игр в Петропавловске."
       },
       "cover": "assets/team/геймдев буткемп петропавловск.jpg",
       "groups": [
@@ -846,8 +846,8 @@
         "ru": "GDC × NU GDC · Unmatched"
       },
       "summary": {
-        "en": "Meetup and tabletop tournament. “Unmached” filename variants are corrected and grouped together.",
-        "ru": "Митап и турнир по настольной игре. Варианты написания «unmached» исправлены и объединены."
+        "en": "A meetup with NU GameDevClub and an Unmatched tabletop tournament.",
+        "ru": "Встреча с NU GameDevClub и турнир по настольной игре Unmatched."
       },
       "cover": "assets/team/турнир unmached.jpg",
       "groups": [
@@ -908,8 +908,8 @@
         "ru": "Go Viral"
       },
       "summary": {
-        "en": "The team’s 2023 community and creative-industry event.",
-        "ru": "Событие команды в креативной индустрии в 2023 году."
+        "en": "GameDev Center at the 2023 Go Viral festival in Astana.",
+        "ru": "GameDev Center на фестивале Go Viral в Астане в 2023 году."
       },
       "cover": "assets/team/go viral 2023.jpg",
       "groups": [
@@ -965,8 +965,8 @@
         "ru": "Студия и сообщество"
       },
       "summary": {
-        "en": "Meetups, studio milestones, celebrations and community initiatives.",
-        "ru": "Митапы, важные моменты студии, праздники и инициативы сообщества."
+        "en": "Photos from team meetups and events.",
+        "ru": "Фотографии со встреч и мероприятий команды."
       },
       "cover": "assets/team/только приняли геймдев-центр.jpg",
       "groups": [
